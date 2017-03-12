@@ -1,0 +1,177 @@
+fileFormatVersion: 2
+guid: bbd2d84d34542434e844208999ad6456
+timeCreated: 1489257724
+licenseType: Free
+ModelImporter:
+  serializedVersion: 19
+  fileIDToRecycleName:
+    100000: Belly
+    100002: //RootNode
+    100004: Hair1
+    100006: Hair2
+    100008: Head
+    100010: Hips
+    100012: LClavicle
+    100014: LEar1
+    100016: LEar2
+    100018: LEar3
+    100020: LEar_Gimbal
+    100022: LFoot
+    100024: LForearm
+    100026: LForearmTwist
+    100028: LHand
+    100030: LHp
+    100032: LShin
+    100034: LShoulder
+    100036: LShoulder_Gimbal
+    100038: LThigh
+    100040: LThigh_Gimbal
+    100042: LToe
+    100044: RClavicle
+    100046: REar1
+    100048: REar2
+    100050: REar3
+    100052: REar_Gimbal
+    100054: RFoot
+    100056: RForearm
+    100058: RForearmTwist
+    100060: RHand
+    100062: RHp
+    100064: Root
+    100066: RShin
+    100068: RShoulder
+    100070: RShoulder_Gimbal
+    100072: RThigh
+    100074: RThigh_Gimbal
+    100076: RToe
+    100078: Spine1
+    100080: Spine2
+    100082: Spine3
+    100084: Tail1
+    100086: Tail2
+    100088: Tail3
+    100090: Tail4
+    100092: Tail5
+    100094: Tail6
+    100096: Tail7
+    100098: Tail_Gimbal
+    400000: Belly
+    400002: //RootNode
+    400004: Hair1
+    400006: Hair2
+    400008: Head
+    400010: Hips
+    400012: LClavicle
+    400014: LEar1
+    400016: LEar2
+    400018: LEar3
+    400020: LEar_Gimbal
+    400022: LFoot
+    400024: LForearm
+    400026: LForearmTwist
+    400028: LHand
+    400030: LHp
+    400032: LShin
+    400034: LShoulder
+    400036: LShoulder_Gimbal
+    400038: LThigh
+    400040: LThigh_Gimbal
+    400042: LToe
+    400044: RClavicle
+    400046: REar1
+    400048: REar2
+    400050: REar3
+    400052: REar_Gimbal
+    400054: RFoot
+    400056: RForearm
+    400058: RForearmTwist
+    400060: RHand
+    400062: RHp
+    400064: Root
+    400066: RShin
+    400068: RShoulder
+    400070: RShoulder_Gimbal
+    400072: RThigh
+    400074: RThigh_Gimbal
+    400076: RToe
+    400078: Spine1
+    400080: Spine2
+    400082: Spine3
+    400084: Tail1
+    400086: Tail2
+    400088: Tail3
+    400090: Tail4
+    400092: Tail5
+    400094: Tail6
+    400096: Tail7
+    400098: Tail_Gimbal
+    7400000: Base Stack
+    9500000: //RootNode
+  materials:
+    importMaterials: 1
+    materialName: 0
+    materialSearch: 1
+  animations:
+    legacyGenerateAnimations: 4
+    bakeSimulation: 0
+    resampleCurves: 1
+    optimizeGameObjects: 0
+    motionNodeName: 
+    animationImportErrors: 
+    animationImportWarnings: 
+    animationRetargetingWarnings: 
+    animationDoRetargetingWarnings: 0
+    animationCompression: 1
+    animationRotationError: 0.5
+    animationPositionError: 0.5
+    animationScaleError: 0.5
+    animationWrapMode: 0
+    extraExposedTransformPaths: []
+    clipAnimations: []
+    isReadable: 1
+  meshes:
+    lODScreenPercentages: []
+    globalScale: 1
+    meshCompression: 0
+    addColliders: 0
+    importBlendShapes: 1
+    swapUVChannels: 0
+    generateSecondaryUV: 0
+    useFileUnits: 1
+    optimizeMeshForGPU: 1
+    keepQuads: 0
+    weldVertices: 1
+    secondaryUVAngleDistortion: 8
+    secondaryUVAreaDistortion: 15.000001
+    secondaryUVHardAngle: 88
+    secondaryUVPackMargin: 4
+    useFileScale: 1
+  tangentSpace:
+    normalSmoothAngle: 60
+    normalImportMode: 0
+    tangentImportMode: 3
+  importAnimation: 1
+  copyAvatar: 0
+  humanDescription:
+    serializedVersion: 2
+    human: []
+    skeleton: []
+    armTwist: 0.5
+    foreArmTwist: 0.5
+    upperLegTwist: 0.5
+    legTwist: 0.5
+    armStretch: 0.05
+    legStretch: 0.05
+    feetSpacing: 0
+    rootMotionBoneName: 
+    rootMotionBoneRotation: {x: 0, y: 0, z: 0, w: 1}
+    hasTranslationDoF: 0
+    hasExtraRoot: 0
+    skeletonHasParents: 1
+  lastHumanDescriptionAvatarSource: {instanceID: 0}
+  animationType: 2
+  humanoidOversampling: 1
+  additionalBone: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
