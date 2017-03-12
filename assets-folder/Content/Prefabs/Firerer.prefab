@@ -19,7 +19,7 @@ GameObject:
   serializedVersion: 5
   m_Component:
   - component: {fileID: 4127634148524398}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: Root
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -34,7 +34,7 @@ GameObject:
   serializedVersion: 5
   m_Component:
   - component: {fileID: 4474310944818142}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: LShin
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -49,7 +49,7 @@ GameObject:
   serializedVersion: 5
   m_Component:
   - component: {fileID: 4915045340856854}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: Belly
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -64,7 +64,7 @@ GameObject:
   serializedVersion: 5
   m_Component:
   - component: {fileID: 4821972137087022}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: LEar1
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -79,7 +79,7 @@ GameObject:
   serializedVersion: 5
   m_Component:
   - component: {fileID: 4393048926147378}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: RFoot
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -94,7 +94,7 @@ GameObject:
   serializedVersion: 5
   m_Component:
   - component: {fileID: 4855369968204886}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: LShoulder_Gimbal
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -109,7 +109,7 @@ GameObject:
   serializedVersion: 5
   m_Component:
   - component: {fileID: 4670408772171192}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: RThigh_Gimbal
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -124,7 +124,7 @@ GameObject:
   serializedVersion: 5
   m_Component:
   - component: {fileID: 4521188605289840}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: RToe
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -139,7 +139,7 @@ GameObject:
   serializedVersion: 5
   m_Component:
   - component: {fileID: 4620084401734952}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: Spine1
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -154,7 +154,7 @@ GameObject:
   serializedVersion: 5
   m_Component:
   - component: {fileID: 4231646249861196}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: Tail1
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -169,7 +169,7 @@ GameObject:
   serializedVersion: 5
   m_Component:
   - component: {fileID: 4356584253482058}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: RShoulder
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -184,7 +184,7 @@ GameObject:
   serializedVersion: 5
   m_Component:
   - component: {fileID: 4559448114710132}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: Tail3
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -199,7 +199,7 @@ GameObject:
   serializedVersion: 5
   m_Component:
   - component: {fileID: 4439843980303640}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: Hair1
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -214,7 +214,7 @@ GameObject:
   serializedVersion: 5
   m_Component:
   - component: {fileID: 4180620961038658}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: LFoot
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -229,7 +229,7 @@ GameObject:
   serializedVersion: 5
   m_Component:
   - component: {fileID: 4698571410620300}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: REar1
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -244,7 +244,7 @@ GameObject:
   serializedVersion: 5
   m_Component:
   - component: {fileID: 4979270093004846}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: REar_Gimbal
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -259,7 +259,7 @@ GameObject:
   serializedVersion: 5
   m_Component:
   - component: {fileID: 4128657678939836}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: LHandShield
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -274,7 +274,7 @@ GameObject:
   serializedVersion: 5
   m_Component:
   - component: {fileID: 4671642379261420}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: RHandWeapon
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -289,7 +289,7 @@ GameObject:
   serializedVersion: 5
   m_Component:
   - component: {fileID: 4400821456808602}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: LHandWeapon
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -304,7 +304,7 @@ GameObject:
   serializedVersion: 5
   m_Component:
   - component: {fileID: 4334116644537386}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: Tail_Gimbal
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -319,7 +319,7 @@ GameObject:
   serializedVersion: 5
   m_Component:
   - component: {fileID: 4932881897937728}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: Tail7
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -334,7 +334,7 @@ GameObject:
   serializedVersion: 5
   m_Component:
   - component: {fileID: 4821142726825756}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: RHand
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -349,7 +349,7 @@ GameObject:
   serializedVersion: 5
   m_Component:
   - component: {fileID: 4423450056922712}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: LHand
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -364,7 +364,7 @@ GameObject:
   serializedVersion: 5
   m_Component:
   - component: {fileID: 4807926465674658}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: LThigh
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -379,7 +379,7 @@ GameObject:
   serializedVersion: 5
   m_Component:
   - component: {fileID: 4037346737215710}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: LEar2
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -400,7 +400,7 @@ GameObject:
   - component: {fileID: 114052263080058626}
   - component: {fileID: 54184709754726920}
   - component: {fileID: 136265671510912836}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: Firerer
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -415,7 +415,7 @@ GameObject:
   serializedVersion: 5
   m_Component:
   - component: {fileID: 4638299756249970}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: Tail2
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -430,7 +430,7 @@ GameObject:
   serializedVersion: 5
   m_Component:
   - component: {fileID: 4552300907199900}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: Hair2
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -445,7 +445,7 @@ GameObject:
   serializedVersion: 5
   m_Component:
   - component: {fileID: 4889507690518628}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: Spine2
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -460,7 +460,7 @@ GameObject:
   serializedVersion: 5
   m_Component:
   - component: {fileID: 4706288304014018}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: REar3
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -475,7 +475,7 @@ GameObject:
   serializedVersion: 5
   m_Component:
   - component: {fileID: 4263857245615464}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: RForearm
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -490,7 +490,7 @@ GameObject:
   serializedVersion: 5
   m_Component:
   - component: {fileID: 4280040071785292}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: LClavicle
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -505,7 +505,7 @@ GameObject:
   serializedVersion: 5
   m_Component:
   - component: {fileID: 4094377912636500}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: Tail6
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -520,7 +520,7 @@ GameObject:
   serializedVersion: 5
   m_Component:
   - component: {fileID: 4045086398943014}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: RShin
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -535,7 +535,7 @@ GameObject:
   serializedVersion: 5
   m_Component:
   - component: {fileID: 4691356425146596}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: Head
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -550,7 +550,7 @@ GameObject:
   serializedVersion: 5
   m_Component:
   - component: {fileID: 4980711548792028}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: LShoulder
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -565,7 +565,7 @@ GameObject:
   serializedVersion: 5
   m_Component:
   - component: {fileID: 4531686286760022}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: RClavicle
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -580,7 +580,7 @@ GameObject:
   serializedVersion: 5
   m_Component:
   - component: {fileID: 4737786824324088}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: LEar_Gimbal
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -595,7 +595,7 @@ GameObject:
   serializedVersion: 5
   m_Component:
   - component: {fileID: 4139793874455260}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: RThigh
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -610,7 +610,7 @@ GameObject:
   serializedVersion: 5
   m_Component:
   - component: {fileID: 4019982647107986}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: Hips
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -625,7 +625,7 @@ GameObject:
   serializedVersion: 5
   m_Component:
   - component: {fileID: 4792775695143404}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: REar2
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -640,7 +640,7 @@ GameObject:
   serializedVersion: 5
   m_Component:
   - component: {fileID: 4945576377320362}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: LToe
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -655,7 +655,7 @@ GameObject:
   serializedVersion: 5
   m_Component:
   - component: {fileID: 4332059851532684}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: RShoulder_Gimbal
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -670,7 +670,7 @@ GameObject:
   serializedVersion: 5
   m_Component:
   - component: {fileID: 4286900254540388}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: LHp
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -685,7 +685,7 @@ GameObject:
   serializedVersion: 5
   m_Component:
   - component: {fileID: 4707212386974780}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: Tail4
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -700,7 +700,7 @@ GameObject:
   serializedVersion: 5
   m_Component:
   - component: {fileID: 4785445508403672}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: RForearmTwist
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -715,7 +715,7 @@ GameObject:
   serializedVersion: 5
   m_Component:
   - component: {fileID: 4662054397089364}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: LThigh_Gimbal
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -730,7 +730,7 @@ GameObject:
   serializedVersion: 5
   m_Component:
   - component: {fileID: 4915536810457938}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: LEar3
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -745,7 +745,7 @@ GameObject:
   serializedVersion: 5
   m_Component:
   - component: {fileID: 4977561283618982}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: LForearmTwist
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -760,7 +760,7 @@ GameObject:
   serializedVersion: 5
   m_Component:
   - component: {fileID: 4436178435755008}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: RHp
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -775,7 +775,7 @@ GameObject:
   serializedVersion: 5
   m_Component:
   - component: {fileID: 4978909388426788}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: Spine3
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -790,7 +790,7 @@ GameObject:
   serializedVersion: 5
   m_Component:
   - component: {fileID: 4668360133747472}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: Tail5
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -805,7 +805,7 @@ GameObject:
   serializedVersion: 5
   m_Component:
   - component: {fileID: 4217376855303146}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: LForearm
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -818,7 +818,7 @@ Transform:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1649439625650696}
-  m_LocalRotation: {x: 1.0842053e-19, y: 0.0008726645, z: -3.063731e-22, w: 0.99999964}
+  m_LocalRotation: {x: -0, y: -0.13878806, z: 3.6379785e-11, w: 0.9903221}
   m_LocalPosition: {x: -0, y: 0.35800228, z: -0.007502015}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
@@ -829,7 +829,7 @@ Transform:
   - {fileID: 4334116644537386}
   m_Father: {fileID: 4127634148524398}
   m_RootOrder: 0
-  m_LocalEulerAnglesHint: {x: -3.9844012, y: 26.259996, z: -2.0695238}
+  m_LocalEulerAnglesHint: {x: 0, y: -15.955001, z: 0}
 --- !u!4 &4037346737215710
 Transform:
   m_ObjectHideFlags: 1
@@ -1599,6 +1599,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4de13fca299147645bee59dd2153debe, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  Bullet: {fileID: 114503597805047140, guid: d9e3379e841c66c47941256bb727cff9, type: 2}
+  SpineBone: {fileID: 4620084401734952}
+  RootBone: {fileID: 4127634148524398}
+  WeaponBone: {fileID: 4671642379261420}
   TargetPosition: {x: 0, y: 0, z: 0}
   MaxSpeed: 4.5
 --- !u!136 &136265671510912836

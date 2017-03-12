@@ -1,0 +1,116 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!1011 &101100000
+AvatarMask:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_Name: UpperMask
+  m_Mask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+  m_Elements:
+  - m_Path: 
+    m_Weight: 1
+  - m_Path: Root
+    m_Weight: 1
+  - m_Path: Root/Hips
+    m_Weight: 1
+  - m_Path: Root/Hips/Belly
+    m_Weight: 0
+  - m_Path: Root/Hips/LHp
+    m_Weight: 0
+  - m_Path: Root/Hips/LHp/LThigh_Gimbal
+    m_Weight: 0
+  - m_Path: Root/Hips/LHp/LThigh_Gimbal/LThigh
+    m_Weight: 0
+  - m_Path: Root/Hips/LHp/LThigh_Gimbal/LThigh/LShin
+    m_Weight: 0
+  - m_Path: Root/Hips/LHp/LThigh_Gimbal/LThigh/LShin/LFoot
+    m_Weight: 0
+  - m_Path: Root/Hips/LHp/LThigh_Gimbal/LThigh/LShin/LFoot/LToe
+    m_Weight: 0
+  - m_Path: Root/Hips/RHp
+    m_Weight: 0
+  - m_Path: Root/Hips/RHp/RThigh_Gimbal
+    m_Weight: 0
+  - m_Path: Root/Hips/RHp/RThigh_Gimbal/RThigh
+    m_Weight: 0
+  - m_Path: Root/Hips/RHp/RThigh_Gimbal/RThigh/RShin
+    m_Weight: 0
+  - m_Path: Root/Hips/RHp/RThigh_Gimbal/RThigh/RShin/RFoot
+    m_Weight: 0
+  - m_Path: Root/Hips/RHp/RThigh_Gimbal/RThigh/RShin/RFoot/RToe
+    m_Weight: 0
+  - m_Path: Root/Hips/Spine1
+    m_Weight: 1
+  - m_Path: Root/Hips/Spine1/Spine2
+    m_Weight: 1
+  - m_Path: Root/Hips/Spine1/Spine2/Spine3
+    m_Weight: 1
+  - m_Path: Root/Hips/Spine1/Spine2/Spine3/Head
+    m_Weight: 1
+  - m_Path: Root/Hips/Spine1/Spine2/Spine3/Head/Hair1
+    m_Weight: 1
+  - m_Path: Root/Hips/Spine1/Spine2/Spine3/Head/Hair1/Hair2
+    m_Weight: 1
+  - m_Path: Root/Hips/Spine1/Spine2/Spine3/Head/LEar_Gimbal
+    m_Weight: 1
+  - m_Path: Root/Hips/Spine1/Spine2/Spine3/Head/LEar_Gimbal/LEar1
+    m_Weight: 1
+  - m_Path: Root/Hips/Spine1/Spine2/Spine3/Head/LEar_Gimbal/LEar1/LEar2
+    m_Weight: 1
+  - m_Path: Root/Hips/Spine1/Spine2/Spine3/Head/LEar_Gimbal/LEar1/LEar2/LEar3
+    m_Weight: 1
+  - m_Path: Root/Hips/Spine1/Spine2/Spine3/Head/REar_Gimbal
+    m_Weight: 1
+  - m_Path: Root/Hips/Spine1/Spine2/Spine3/Head/REar_Gimbal/REar1
+    m_Weight: 1
+  - m_Path: Root/Hips/Spine1/Spine2/Spine3/Head/REar_Gimbal/REar1/REar2
+    m_Weight: 1
+  - m_Path: Root/Hips/Spine1/Spine2/Spine3/Head/REar_Gimbal/REar1/REar2/REar3
+    m_Weight: 1
+  - m_Path: Root/Hips/Spine1/Spine2/Spine3/LClavicle
+    m_Weight: 1
+  - m_Path: Root/Hips/Spine1/Spine2/Spine3/LClavicle/LShoulder_Gimbal
+    m_Weight: 1
+  - m_Path: Root/Hips/Spine1/Spine2/Spine3/LClavicle/LShoulder_Gimbal/LShoulder
+    m_Weight: 1
+  - m_Path: Root/Hips/Spine1/Spine2/Spine3/LClavicle/LShoulder_Gimbal/LShoulder/LForearm
+    m_Weight: 1
+  - m_Path: Root/Hips/Spine1/Spine2/Spine3/LClavicle/LShoulder_Gimbal/LShoulder/LForearm/LForearmTwist
+    m_Weight: 1
+  - m_Path: Root/Hips/Spine1/Spine2/Spine3/LClavicle/LShoulder_Gimbal/LShoulder/LForearm/LHand
+    m_Weight: 1
+  - m_Path: Root/Hips/Spine1/Spine2/Spine3/LClavicle/LShoulder_Gimbal/LShoulder/LForearm/LHand/LHandWeapon
+    m_Weight: 1
+  - m_Path: Root/Hips/Spine1/Spine2/Spine3/LClavicle/LShoulder_Gimbal/LShoulder/LForearm/LHandShield
+    m_Weight: 1
+  - m_Path: Root/Hips/Spine1/Spine2/Spine3/RClavicle
+    m_Weight: 1
+  - m_Path: Root/Hips/Spine1/Spine2/Spine3/RClavicle/RShoulder_Gimbal
+    m_Weight: 1
+  - m_Path: Root/Hips/Spine1/Spine2/Spine3/RClavicle/RShoulder_Gimbal/RShoulder
+    m_Weight: 1
+  - m_Path: Root/Hips/Spine1/Spine2/Spine3/RClavicle/RShoulder_Gimbal/RShoulder/RForearm
+    m_Weight: 1
+  - m_Path: Root/Hips/Spine1/Spine2/Spine3/RClavicle/RShoulder_Gimbal/RShoulder/RForearm/RForearmTwist
+    m_Weight: 1
+  - m_Path: Root/Hips/Spine1/Spine2/Spine3/RClavicle/RShoulder_Gimbal/RShoulder/RForearm/RHand
+    m_Weight: 1
+  - m_Path: Root/Hips/Spine1/Spine2/Spine3/RClavicle/RShoulder_Gimbal/RShoulder/RForearm/RHand/RHandWeapon
+    m_Weight: 1
+  - m_Path: Root/Hips/Tail_Gimbal
+    m_Weight: 1
+  - m_Path: Root/Hips/Tail_Gimbal/Tail1
+    m_Weight: 1
+  - m_Path: Root/Hips/Tail_Gimbal/Tail1/Tail2
+    m_Weight: 1
+  - m_Path: Root/Hips/Tail_Gimbal/Tail1/Tail2/Tail3
+    m_Weight: 1
+  - m_Path: Root/Hips/Tail_Gimbal/Tail1/Tail2/Tail3/Tail4
+    m_Weight: 1
+  - m_Path: Root/Hips/Tail_Gimbal/Tail1/Tail2/Tail3/Tail4/Tail5
+    m_Weight: 1
+  - m_Path: Root/Hips/Tail_Gimbal/Tail1/Tail2/Tail3/Tail4/Tail5/Tail6
+    m_Weight: 1
+  - m_Path: Root/Hips/Tail_Gimbal/Tail1/Tail2/Tail3/Tail4/Tail5/Tail6/Tail7
+    m_Weight: 1

@@ -78,6 +78,10 @@ namespace LlapiExample
                 transform.position = value;
             }
         }
+        public Camera UnityCamera
+        {
+            get { return CameraObject; }
+        }
 
         private void Start()
         {

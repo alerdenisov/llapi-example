@@ -127,7 +127,142 @@ ModelImporter:
     animationScaleError: 0.5
     animationWrapMode: 0
     extraExposedTransformPaths: []
-    clipAnimations: []
+    clipAnimations:
+    - serializedVersion: 16
+      name: Base Stack
+      takeName: Base Stack
+      firstFrame: 0
+      lastFrame: 25
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      hasAdditiveReferencePose: 0
+      loopTime: 0
+      loopBlend: 0
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events:
+      - time: 0.9116746
+        functionName: DamageEvent
+        data: 
+        objectReferenceParameter: {instanceID: 0}
+        floatParameter: 0
+        intParameter: 0
+        messageOptions: 0
+      transformMask:
+      - path: 
+        weight: 1
+      - path: Root
+        weight: 1
+      - path: Root/Hips
+        weight: 1
+      - path: Root/Hips/Belly
+        weight: 1
+      - path: Root/Hips/LHp
+        weight: 1
+      - path: Root/Hips/LHp/LThigh_Gimbal
+        weight: 1
+      - path: Root/Hips/LHp/LThigh_Gimbal/LThigh
+        weight: 1
+      - path: Root/Hips/LHp/LThigh_Gimbal/LThigh/LShin
+        weight: 1
+      - path: Root/Hips/LHp/LThigh_Gimbal/LThigh/LShin/LFoot
+        weight: 1
+      - path: Root/Hips/LHp/LThigh_Gimbal/LThigh/LShin/LFoot/LToe
+        weight: 1
+      - path: Root/Hips/RHp
+        weight: 1
+      - path: Root/Hips/RHp/RThigh_Gimbal
+        weight: 1
+      - path: Root/Hips/RHp/RThigh_Gimbal/RThigh
+        weight: 1
+      - path: Root/Hips/RHp/RThigh_Gimbal/RThigh/RShin
+        weight: 1
+      - path: Root/Hips/RHp/RThigh_Gimbal/RThigh/RShin/RFoot
+        weight: 1
+      - path: Root/Hips/RHp/RThigh_Gimbal/RThigh/RShin/RFoot/RToe
+        weight: 1
+      - path: Root/Hips/Spine1
+        weight: 1
+      - path: Root/Hips/Spine1/Spine2
+        weight: 1
+      - path: Root/Hips/Spine1/Spine2/Spine3
+        weight: 1
+      - path: Root/Hips/Spine1/Spine2/Spine3/Head
+        weight: 1
+      - path: Root/Hips/Spine1/Spine2/Spine3/Head/Hair1
+        weight: 1
+      - path: Root/Hips/Spine1/Spine2/Spine3/Head/Hair1/Hair2
+        weight: 1
+      - path: Root/Hips/Spine1/Spine2/Spine3/Head/LEar_Gimbal
+        weight: 1
+      - path: Root/Hips/Spine1/Spine2/Spine3/Head/LEar_Gimbal/LEar1
+        weight: 1
+      - path: Root/Hips/Spine1/Spine2/Spine3/Head/LEar_Gimbal/LEar1/LEar2
+        weight: 1
+      - path: Root/Hips/Spine1/Spine2/Spine3/Head/LEar_Gimbal/LEar1/LEar2/LEar3
+        weight: 1
+      - path: Root/Hips/Spine1/Spine2/Spine3/Head/REar_Gimbal
+        weight: 1
+      - path: Root/Hips/Spine1/Spine2/Spine3/Head/REar_Gimbal/REar1
+        weight: 1
+      - path: Root/Hips/Spine1/Spine2/Spine3/Head/REar_Gimbal/REar1/REar2
+        weight: 1
+      - path: Root/Hips/Spine1/Spine2/Spine3/Head/REar_Gimbal/REar1/REar2/REar3
+        weight: 1
+      - path: Root/Hips/Spine1/Spine2/Spine3/LClavicle
+        weight: 1
+      - path: Root/Hips/Spine1/Spine2/Spine3/LClavicle/LShoulder_Gimbal
+        weight: 1
+      - path: Root/Hips/Spine1/Spine2/Spine3/LClavicle/LShoulder_Gimbal/LShoulder
+        weight: 1
+      - path: Root/Hips/Spine1/Spine2/Spine3/LClavicle/LShoulder_Gimbal/LShoulder/LForearm
+        weight: 1
+      - path: Root/Hips/Spine1/Spine2/Spine3/LClavicle/LShoulder_Gimbal/LShoulder/LForearm/LForearmTwist
+        weight: 1
+      - path: Root/Hips/Spine1/Spine2/Spine3/LClavicle/LShoulder_Gimbal/LShoulder/LForearm/LHand
+        weight: 1
+      - path: Root/Hips/Spine1/Spine2/Spine3/RClavicle
+        weight: 1
+      - path: Root/Hips/Spine1/Spine2/Spine3/RClavicle/RShoulder_Gimbal
+        weight: 1
+      - path: Root/Hips/Spine1/Spine2/Spine3/RClavicle/RShoulder_Gimbal/RShoulder
+        weight: 1
+      - path: Root/Hips/Spine1/Spine2/Spine3/RClavicle/RShoulder_Gimbal/RShoulder/RForearm
+        weight: 1
+      - path: Root/Hips/Spine1/Spine2/Spine3/RClavicle/RShoulder_Gimbal/RShoulder/RForearm/RForearmTwist
+        weight: 1
+      - path: Root/Hips/Spine1/Spine2/Spine3/RClavicle/RShoulder_Gimbal/RShoulder/RForearm/RHand
+        weight: 1
+      - path: Root/Hips/Tail_Gimbal
+        weight: 1
+      - path: Root/Hips/Tail_Gimbal/Tail1
+        weight: 1
+      - path: Root/Hips/Tail_Gimbal/Tail1/Tail2
+        weight: 1
+      - path: Root/Hips/Tail_Gimbal/Tail1/Tail2/Tail3
+        weight: 1
+      - path: Root/Hips/Tail_Gimbal/Tail1/Tail2/Tail3/Tail4
+        weight: 1
+      - path: Root/Hips/Tail_Gimbal/Tail1/Tail2/Tail3/Tail4/Tail5
+        weight: 1
+      - path: Root/Hips/Tail_Gimbal/Tail1/Tail2/Tail3/Tail4/Tail5/Tail6
+        weight: 1
+      - path: Root/Hips/Tail_Gimbal/Tail1/Tail2/Tail3/Tail4/Tail5/Tail6/Tail7
+        weight: 1
+      maskType: 3
+      maskSource: {instanceID: 0}
+      additiveReferencePoseFrame: 0
     isReadable: 1
   meshes:
     lODScreenPercentages: []
