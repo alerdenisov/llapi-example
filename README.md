@@ -9,6 +9,7 @@ This is done as test job to apply position in [Unnyhog company](http://unnyhog.c
 4. Open two instance of Unity (5.5.0 and newer)
 5. Open folders `llapi-server` and `llapi-client` as a projects
 
+or get prebuilded binaries from [releases](https://github.com/alerdenisov/llapi-example/releases)
 
 ## Running
 Be sure you let client to connect before run game at server.
@@ -18,7 +19,6 @@ Be sure you let client to connect before run game at server.
 - `Mouse` - aim
 - `LClick` - fire bullet
 - `Spacebar` - spawn crate
-
 
 ## Showcase
 ![](/preview.gif)
