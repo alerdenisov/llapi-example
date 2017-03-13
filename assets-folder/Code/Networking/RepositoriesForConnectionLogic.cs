@@ -21,6 +21,7 @@ namespace LlapiExample
         private void OnConnect(int connectionId)
         {
             var instance = container.Instantiate<CommanderStatus>();
+            instance.SetOwner(connectionId);
             container.Bind<CommanderStatus>().WithId(connectionId).FromInstance(instance).AsCached();
         }
 

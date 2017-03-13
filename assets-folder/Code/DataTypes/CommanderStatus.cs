@@ -25,6 +25,12 @@ namespace LlapiExample
         private Crate cratePrefab;
         private Bullet bulletPrefab;
         private OutgoingCommandsQueue outgoings;
+        private OwnTable table;
+
+        public void SetOwner(int connectionId)
+        {
+            id = connectionId;
+        }
 
         public Firerer Character
         {
@@ -38,8 +44,9 @@ namespace LlapiExample
 
         private static int charStatusCount = 0;
 
-        public CommanderStatus(DiContainer container, Firerer firererPrefab, Crate crate, Bullet bullet, OutgoingCommandsQueue outgoings)
+        public CommanderStatus(DiContainer container, Firerer firererPrefab, Crate crate, Bullet bullet, OutgoingCommandsQueue outgoings, OwnTable table)
         {
+            this.table = table;
             this.outgoings = outgoings;
             this.firererPrefab = firererPrefab;
             this.cratePrefab = crate;
@@ -56,10 +63,60 @@ namespace LlapiExample
             this.team = team;
         }
 
-        private NetworkEntity Spawn(NetworkEntity prefab, Vector3 position, Vector3 forward, Guid id)
+        public void Destroy(NetworkEntity entity)
+        {
+            Destroy(entity.Id);
+        }
+
+        public void Destroy(Guid id)
+        {
+            if(!entities.ContainsKey(id))
+            {
+                Debug.LogError("Unknown id: " + id);
+                return;
+            }
+
+            if (entities[id].gameObject)
+                GameObject.Destroy(entities[id].gameObject, 0.1f);
+
+            entities.Remove(id);
+            table.Release(id);
+        }
+
+        public void Damage(Guid id, float amount, Vector3? point = null, Vector3? force = null)
+        {
+            if(!entities.ContainsKey(id))
+            {
+                Debug.LogError("Unknown id: " + id);
+                return;
+            }
+
+            var entity = entities[id] as VitalEntity;
+
+            if(!entity)
+            {
+                Debug.LogError("Non vital entity: " + entities[id]);
+                return;
+            }
+
+            if(!point.HasValue)
+            {
+                point = entity.transform.position;
+            }
+
+            if(!force.HasValue)
+            {
+                force = Vector3.forward;
+            }
+
+            entity.DamageReceive(amount, point.Value, force.Value);
+        }
+
+        private NetworkEntity Spawn(NetworkEntity prefab, Vector3 position, Vector3 forward, Guid guid)
         {
             var rotation = Quaternion.LookRotation(forward, Vector3.up);
 
+            Debug.LogFormat("Instantiate from container {0}, on commander {1}", prefab.name, this.id);
             var instance = container.InstantiatePrefab(prefab.gameObject);
             instance.transform.position = position;
             instance.transform.rotation = rotation;
@@ -67,12 +124,13 @@ namespace LlapiExample
 
             var network = instance.GetComponent<NetworkEntity>();
 
-            network.IsMine = this.id == 0;
-            network.CommanderId = this.id;
+            network.IsMine = id == 0;
+            network.CommanderId = id;
             network.Commander = this;
-            network.Id = id;
+            network.Id = guid;
 
             entities.Add(network.Id, network);
+            table.Obtain(guid, this.id);
 
             return network;
         }

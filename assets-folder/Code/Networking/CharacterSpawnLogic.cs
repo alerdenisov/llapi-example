@@ -45,12 +45,18 @@ namespace LlapiExample
             playStatus.Set(PlayState.Respawn);
         }
 
-        public void OnCharacter(Firerer controller)
+        public void OnCharacter(Firerer character)
         {
-            if(controller)
+            if(character)
             {
-                playerInput.Firerer = controller;
+                playerInput.Firerer = character;
+                character.OnDie += OnDie;
             }
+        }
+
+        private void OnDie()
+        {
+            playStatus.Set(PlayState.Dead);
         }
 
         public void OnPlayStatusChange(PlayState state)
@@ -79,7 +85,11 @@ namespace LlapiExample
 
             if(state == PlayState.Await)
             {
-                var position = characterStatus.Team == Team.TeamA ? new Vector3(0, 0, 23f) : new Vector3(0, 0, -21f);
+                var x = UnityEngine.Random.Range(-5f, 5f);
+                var z = UnityEngine.Random.Range(16f, 22f);
+                var side = characterStatus.Team == Team.TeamA ? -1f : 1f;
+
+                var position = new Vector3(x, 0, z * side);
                 var entity = characterStatus.SpawnCharacter(position);
                 var cmd = new EntityCreate();
                 cmd.prefab = PrefabType.Character;

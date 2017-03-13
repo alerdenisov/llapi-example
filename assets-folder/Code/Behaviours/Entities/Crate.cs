@@ -27,8 +27,9 @@ namespace LlapiExample
 
         private const float partsPerDamage = 0.5f;
 
-        private void Start()
+        public override void Start()
         {
+            base.Start();
             health = MaxHealth;
         }
 

@@ -36,7 +36,10 @@ namespace LlapiExample
 
         public void Update()
         {
-            if (!character.Character)
+            if (!character.Character || !character.Character.gameObject)
+                return;
+
+            if (character.Character.Dead)
                 return;
 
             outgoings.Enqueue(container.Instantiate<CharacterLook>());

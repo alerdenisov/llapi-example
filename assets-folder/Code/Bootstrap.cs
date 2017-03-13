@@ -14,12 +14,15 @@ namespace LlapiExample
         public ClientConfigView ClientConfig;
         public StartGameView StartGame;
         public RespawnView RespawnView;
+        public HealthView HealthBar;
 
         public Firerer CharacterPrefab;
         public Crate CratePrefab;
         public FirererPlayerInput InputPrefab;
         public GameplayCamera CameraPrefab;
         public Bullet BulletPrefab;
+
+        public Canvas SceneCanvas;
 
         public override void InstallBindings()
         {
@@ -47,6 +50,7 @@ namespace LlapiExample
         {
             Container.Bind<ConnectionStatus>().FromInstance(new ConnectionStatus()).AsSingle();
             Container.Bind<PlayStatus>().FromInstance(new PlayStatus()).AsSingle();
+            Container.Bind<OwnTable>().FromInstance(new OwnTable()).AsSingle();
 
             Container.Bind<ConnectionsRepository>().FromInstance(new ConnectionsRepository()).AsSingle();
             Container.Bind<IncomingCommandsQueue>().FromInstance(new IncomingCommandsQueue()).AsSingle();
@@ -72,6 +76,8 @@ namespace LlapiExample
             Container.Bind<StartGameView>().FromInstance(StartGame).AsSingle();
             Container.Bind<StatusView>().FromInstance(Status).AsSingle();
             Container.Bind<RespawnView>().FromInstance(RespawnView).AsSingle();
+            Container.Bind<HealthView>().FromInstance(HealthBar).AsSingle();
+            Container.Bind<Canvas>().FromInstance(SceneCanvas).AsSingle();
         }
 
         private void BindLogics()
@@ -88,12 +94,9 @@ namespace LlapiExample
             BindLogic<SyncInputLogic>("both");
 
             // commands handlers
-            // BindLogic<CharacterSpawnHadler>("both");
             BindLogic<CharacterLookHandler>("both");
             BindLogic<CharacterMoveHandler>("both");
             BindLogic<CharacterShootHandler>("both");
-            // BindLogic<CharacterBulletHandler>("both");
-            // BindLogic<CharacterBuiltHandler>("both");
 
             BindLogic<EntityCreateHandler>("both");
             BindLogic<EntityDamageHandler>("both");

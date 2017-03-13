@@ -45,6 +45,7 @@ namespace LlapiExample
 
         public Action OnShoot;
         public Action OnBuild;
+        public Action OnDie;
         public Action<Vector3, float> OnBuilt;
         public Action<Vector3, Vector3> OnBullet;
 
@@ -96,8 +97,9 @@ namespace LlapiExample
             State = StateFlags.Alive;
         }
 
-        private void Update()
+        public override void Update()
         {
+            base.Update();
             if (Dead)
             {
                 // Dead state
@@ -159,6 +161,7 @@ namespace LlapiExample
             {
                 if (IsMine)
                 {
+                    Debug.Log("Spawn bullet " + this);
                     var position = WeaponBone.position + shootDirection * 0.65f;
                     var entity = status.SpawnBullet(position, shootDirection);
 
@@ -176,6 +179,7 @@ namespace LlapiExample
             {
                 if (IsMine)
                 {
+                    Debug.Log("Spawn Crate " + this);
                     var position = transform.position + shootDirection * 1.2f + Vector3.up * 1.5f;
                     var entity = status.SpawnCrate(position);
 
@@ -201,13 +205,14 @@ namespace LlapiExample
 
         public override float MaxHealth
         {
-            get { return 100f; }
+            get { return 50f; }
         }
 
         private float health;
 
-        private void Start()
+        public override void Start()
         {
+            base.Start();
             health = MaxHealth;
         }
 
@@ -283,6 +288,16 @@ namespace LlapiExample
             if (Dead) return;
             State = StateFlags.Dead;
             Animator.SetBool("Die", true);
+
+            if (IsMine)
+            {
+                if (OnDie != null) OnDie();
+
+                var remove = new EntityRemove();
+                remove.id = Id;
+                outgoings.Enqueue(remove);
+                status.Destroy(this);
+            }
         }
         
         private void OnDrawGizmos()
