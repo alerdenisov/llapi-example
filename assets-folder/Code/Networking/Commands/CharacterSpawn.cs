@@ -6,25 +6,18 @@ namespace LlapiExample
 {
     public class CharacterSpawn : BaseCommand, ICommand
     {
-        private Team team;
-
-        public Team Team { get { return team; } }
-
-        public CharacterSpawn(PlayStatus status) : base(CommandIds.Character_Spawn)
+        public CharacterSpawn() : base(CommandIds.Character_Spawn)
         {
-            team = status.Team;
+            //team = status.Team;
         }
 
         public object[] Data()
         {
-            return new object[] {
-                (byte)team
-            };
+            return new object[0];
         }
 
         public void Read(object[] buffer, ref int position)
         {
-            team = (Team)(byte)buffer[++position];
         }
     }
 }

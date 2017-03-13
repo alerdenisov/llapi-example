@@ -4,7 +4,7 @@ using System.Collections;
 namespace LlapiExample
 {
     [RequireComponent(typeof(Rigidbody))]
-    public class BulletController : MonoBehaviour
+    public class Bullet : NetworkEntity
     {
         private Rigidbody rigidbodyCached;
         protected Rigidbody Rigidbody
@@ -27,16 +27,18 @@ namespace LlapiExample
 
         private void OnCollisionEnter(Collision collision)
         {
-            var entity = collision.gameObject.GetComponent<BaseEntity>();
-            if(entity)
+            if (IsMine)
             {
-                entity.DamageReceive(Damage, collision.contacts[0].point, Rigidbody.velocity);
+                var entity = collision.gameObject.GetComponent<VitalEntity>();
+                if (entity)
+                {
+                    entity.DamageReceive(Damage, collision.contacts[0].point, Rigidbody.velocity);
+                }
             }
 
             var audio = Instantiate(ImpactPrefab.gameObject, transform.position, Quaternion.identity);
             var sound = audio.GetComponent<AudioSource>();
             Destroy(audio, sound.clip.length);
-
             Destroy(gameObject);
         }
     }

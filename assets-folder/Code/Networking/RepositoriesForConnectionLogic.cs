@@ -20,13 +20,13 @@ namespace LlapiExample
 
         private void OnConnect(int connectionId)
         {
-            var instance = container.Instantiate<CharacterStatus>();
-            container.Bind<CharacterStatus>().WithId(connectionId).FromInstance(instance).AsCached();
+            var instance = container.Instantiate<CommanderStatus>();
+            container.Bind<CommanderStatus>().WithId(connectionId).FromInstance(instance).AsCached();
         }
 
         private void OnDisconnect(int connectionId)
         {
-            container.UnbindId<CharacterStatus>(connectionId);
+            container.UnbindId<CommanderStatus>(connectionId);
         }
         
         public void Update()

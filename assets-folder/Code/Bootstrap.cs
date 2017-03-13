@@ -19,7 +19,7 @@ namespace LlapiExample
         public Crate CratePrefab;
         public FirererPlayerInput InputPrefab;
         public GameplayCamera CameraPrefab;
-        public BulletController BulletPrefab;
+        public Bullet BulletPrefab;
 
         public override void InstallBindings()
         {
@@ -29,13 +29,15 @@ namespace LlapiExample
             BindViews();
             BindHandlers();
             BindPrefabs();
+
+            Container.Bind<CommanderStatus>().WithId(0).To<CommanderStatus>().AsCached();
         }
 
         private void BindPrefabs()
         {
             Container.Bind<Firerer>().FromInstance(CharacterPrefab).AsSingle();
             Container.Bind<Crate>().FromInstance(CratePrefab).AsSingle();
-            Container.Bind<BulletController>().FromInstance(BulletPrefab).AsSingle();
+            Container.Bind<Bullet>().FromInstance(BulletPrefab).AsSingle();
 
             Container.Bind<FirererPlayerInput>().FromComponentInNewPrefab(InputPrefab).AsSingle();
             Container.Bind<GameplayCamera>().FromComponentInNewPrefab(CameraPrefab).AsSingle();
@@ -45,7 +47,6 @@ namespace LlapiExample
         {
             Container.Bind<ConnectionStatus>().FromInstance(new ConnectionStatus()).AsSingle();
             Container.Bind<PlayStatus>().FromInstance(new PlayStatus()).AsSingle();
-            Container.Bind<CharacterStatus>().WithId(0).To<CharacterStatus>().AsCached();
 
             Container.Bind<ConnectionsRepository>().FromInstance(new ConnectionsRepository()).AsSingle();
             Container.Bind<IncomingCommandsQueue>().FromInstance(new IncomingCommandsQueue()).AsSingle();
@@ -87,9 +88,16 @@ namespace LlapiExample
             BindLogic<SyncInputLogic>("both");
 
             // commands handlers
-            BindLogic<CharacterSpawnHadler>("both");
+            // BindLogic<CharacterSpawnHadler>("both");
             BindLogic<CharacterLookHandler>("both");
             BindLogic<CharacterMoveHandler>("both");
+            BindLogic<CharacterShootHandler>("both");
+            // BindLogic<CharacterBulletHandler>("both");
+            // BindLogic<CharacterBuiltHandler>("both");
+
+            BindLogic<EntityCreateHandler>("both");
+            BindLogic<EntityDamageHandler>("both");
+            BindLogic<EntityRemoveHandler>("both");
         }
 
         private void BindLogic<T>(string id) where T : INetworkLogic
@@ -107,6 +115,11 @@ namespace LlapiExample
             BindCommand<CharacterLook>(CommandIds.Character_Look);
             BindCommand<CharacterMove>(CommandIds.Character_Move);
             BindCommand<CharacterBuilt>(CommandIds.Character_Built);
+            BindCommand<CharacterBullet>(CommandIds.Character_Bullet);
+
+            BindCommand<EntityCreate>(CommandIds.Entity_Create);
+            BindCommand<EntityDamage>(CommandIds.Entity_Damage);
+            BindCommand<EntityRemove>(CommandIds.Entity_Remove);
         }
 
         private void BindCommand<T>(byte id) where T : ICommand

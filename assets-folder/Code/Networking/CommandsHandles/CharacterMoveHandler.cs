@@ -19,15 +19,15 @@ namespace LlapiExample
         protected override void OnCommand(CharacterMove command)
         {
             var owner = command.Connection;
-            var repository = container.ResolveId<CharacterStatus>(command.Connection);
+            var repository = container.ResolveId<CommanderStatus>(command.Connection);
 
-            if (!repository.Controller)
+            if (!repository.Character)
             {
                 return;
             }
 
-            repository.Controller.Translate(command.position);
-            repository.Controller.Move(command.destination);
+            repository.Character.Translate(command.position);
+            repository.Character.Move(command.destination);
         }
     }
 }

@@ -8,7 +8,7 @@ namespace LlapiExample
 {
     public class FirererPlayerInput : MonoBehaviour
     {
-        public FirererController Firerer;
+        public Firerer Firerer;
         public GameplayCamera Camera;
         private float horizontal;
         private float vertical;
@@ -54,7 +54,13 @@ namespace LlapiExample
             }
 
 
-            cameraPosition = Vector3.Lerp(Firerer.transform.position + camDirection * 5f, Firerer.transform.position + shootDirection * 5f, 0.5f);
+            if(Input.GetAxis("Jump") > 0f)
+            {
+                Firerer.Build();
+            }
+
+
+            cameraPosition = Vector3.Lerp((Vector3)(Firerer.transform.position + camDirection * 5f), (Vector3)(Firerer.transform.position + shootDirection * 5f), 0.5f);
             Camera.Position = Vector3.Lerp(Camera.Position, cameraPosition, Time.deltaTime * 3f);
         }
 
@@ -74,25 +80,25 @@ namespace LlapiExample
 
             var tmpColor = Handles.color;
             Handles.color = Color.red;
-            Handles.DrawLine(Firerer.transform.position, Firerer.transform.position + vector * 5f);
+            Handles.DrawLine((Vector3)Firerer.transform.position, (Vector3)(Firerer.transform.position + vector * 5f));
 
 
             var cameraVector = Quaternion.Euler(0, Camera.YawAngle, 0f) * vector;
             Handles.color = Color.green;
-            Handles.DrawLine(Firerer.transform.position, Firerer.transform.position + cameraVector * 5f);
+            Handles.DrawLine((Vector3)Firerer.transform.position, (Vector3)(Firerer.transform.position + cameraVector * 5f));
 
 
             Handles.color = new Color(0,1f,0,0.3f);
             var angle = 120f;
-            Handles.DrawSolidArc(Firerer.transform.position, Vector3.up, Quaternion.Euler(0, -angle*0.5f, 0) * Firerer.transform.forward, angle, 2f);
+            Handles.DrawSolidArc((Vector3)Firerer.transform.position, Vector3.up, (Vector3)(Quaternion.Euler(0, -angle * 0.5f, 0) * Firerer.transform.forward), angle, 2f);
 
             var spread = angle / 180f;
-            if (Vector3.Angle(Firerer.transform.forward, shootDirection) > angle / 2f)
+            if (Vector3.Angle((Vector3)Firerer.transform.forward, shootDirection) > angle / 2f)
                 Handles.color = Color.red;
             else
                 Handles.color = Color.green;
 
-            Handles.DrawLine(Firerer.transform.position, rayPoint);
+            Handles.DrawLine((Vector3)Firerer.transform.position, rayPoint);
 
             Handles.color = tmpColor;
         }

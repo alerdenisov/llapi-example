@@ -12,17 +12,9 @@ namespace LlapiExample
         Respawn = 1 << 3
     }
 
-    public enum Team : byte
-    {
-        Unknown,
-        TeamA,
-        TeamB
-    }
-
     public class PlayStatus
     {
         private BehaviorSubject<PlayState> state;
-        private Team team;
 
         public PlayStatus(PlayState initial = PlayState.Await)
         {
@@ -38,17 +30,10 @@ namespace LlapiExample
         {
             get { return state.Value; }
         }
-
-        public Team Team { get { return team; } }
         
         public void Set(PlayState next)
         {
             state.OnNext(next);
-        }
-
-        public void SetTeam(Team team)
-        {
-            this.team = team;
         }
     }
 }

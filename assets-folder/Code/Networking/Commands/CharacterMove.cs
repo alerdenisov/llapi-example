@@ -10,7 +10,7 @@ namespace LlapiExample
         public Vector3 position;
         public Vector3 destination;
 
-        [Inject(Id = 0)] private CharacterStatus status;
+        [Inject(Id = 0)] private CommanderStatus status;
 
         public CharacterMove() : base(CommandIds.Character_Move)
         {
@@ -20,8 +20,8 @@ namespace LlapiExample
         public object[] Data()
         {
             return new object[] {
-                status.Controller.transform.position,
-                status.Controller.Agent.destination
+                status.Character.transform.position,
+                status.Character.Agent.destination
             };
         }
 

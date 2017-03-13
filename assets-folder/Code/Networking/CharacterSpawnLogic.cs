@@ -14,7 +14,7 @@ namespace LlapiExample
         [Inject] private PlayStatus playStatus;
         [Inject] private RespawnView respawnView;
         [Inject] private OutgoingCommandsQueue outgoings;
-        [Inject(Id = 0)] private CharacterStatus characterStatus;
+        [Inject(Id = 0)] private CommanderStatus characterStatus;
         [Inject] private DiContainer container;
         #endregion
 
@@ -30,9 +30,9 @@ namespace LlapiExample
             status.Observable.Subscribe(OnStatusChange);
             playStatus.Observable.Subscribe(OnPlayStatusChange);
 
-            playStatus.SetTeam(status.IsClient ? Team.TeamB : Team.TeamA);
+            characterStatus.SetTeam(status.IsClient ? Team.TeamB : Team.TeamA);
 
-            characterStatus.ObservableController.Subscribe(OnCharacterController);
+            characterStatus.ObservableCharacter.Subscribe(OnCharacter);
 
             respawnView.OnRespawn += OnRespawnButton;
             playerInput.Camera = camera;
@@ -45,7 +45,7 @@ namespace LlapiExample
             playStatus.Set(PlayState.Respawn);
         }
 
-        public void OnCharacterController(FirererController controller)
+        public void OnCharacter(Firerer controller)
         {
             if(controller)
             {
@@ -79,8 +79,12 @@ namespace LlapiExample
 
             if(state == PlayState.Await)
             {
-                characterStatus.Spawn();
-                outgoings.Enqueue(container.Instantiate<CharacterSpawn>());
+                var position = characterStatus.Team == Team.TeamA ? new Vector3(0, 0, 23f) : new Vector3(0, 0, -21f);
+                var entity = characterStatus.SpawnCharacter(position);
+                var cmd = new EntityCreate();
+                cmd.prefab = PrefabType.Character;
+                cmd.id = entity.Id;
+                outgoings.Enqueue(cmd);
             }
         }
 

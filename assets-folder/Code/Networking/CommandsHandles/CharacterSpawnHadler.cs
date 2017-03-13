@@ -19,15 +19,12 @@ namespace LlapiExample
         protected override void OnCommand(CharacterSpawn command)
         {
             // TODO: :D
-            var position = command.Team == Team.TeamA ? new Vector3(0, 0, 23f) : new Vector3(0, 0, -21f);
+            //var position = command.Team == Team.TeamA ? new Vector3(0, 0, 23f) : new Vector3(0, 0, -21f);
 
-            var characterGo = container.InstantiatePrefab(firererPrefab);
-            var character = characterGo.GetComponent<Firerer>();
-            var controller = character.GetComponent<FirererController>();
-
-            var repository = container.ResolveId<CharacterStatus>(command.Connection);
-            repository.Character = character;
-            repository.Controller = controller;
+            //var characterGo = container.InstantiatePrefab(firererPrefab);
+            //var character = characterGo.GetComponent<Firerer>();
+            //var repository = container.ResolveId<CommanderStatus>(command.Connection);
+            //repository.Character = character;
         }
     }
 }

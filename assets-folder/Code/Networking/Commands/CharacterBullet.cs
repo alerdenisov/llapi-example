@@ -4,28 +4,28 @@ using System;
 
 namespace LlapiExample
 {
-    public class CharacterBuilt : BaseCommand, ICommand
+    public class CharacterBullet : BaseCommand, ICommand
     {
         public Vector3 position;
-        public float size;
+        public Vector3 forward;
 
-        public CharacterBuilt() : base(CommandIds.Character_Built)
+        public CharacterBullet() : base(CommandIds.Character_Bullet)
         {
-
         }
 
         public object[] Data()
         {
-            return new object[] {
+            return new object[]
+            {
                 position,
-                size
+                forward
             };
         }
 
         public void Read(object[] buffer, ref int position)
         {
             this.position = (Vector3)buffer[++position];
-            size = (float)buffer[++position];
+            forward = (Vector3)buffer[++position];
         }
     }
 }

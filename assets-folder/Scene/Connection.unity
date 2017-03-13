@@ -3831,7 +3831,7 @@ MonoBehaviour:
     type: 2}
   CameraPrefab: {fileID: 114775571632873506, guid: 68c602b37f9c2b3439809ff5cd4926b0,
     type: 2}
-  BulletPrefab: {fileID: 114503597805047140, guid: d9e3379e841c66c47941256bb727cff9,
+  BulletPrefab: {fileID: 114180267529022260, guid: d9e3379e841c66c47941256bb727cff9,
     type: 2}
 --- !u!114 &1669570869
 MonoBehaviour:

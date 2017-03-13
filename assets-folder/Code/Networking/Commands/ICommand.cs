@@ -25,6 +25,7 @@ namespace LlapiExample
         public const byte Character_Shoot   = 0x13;
         public const byte Character_Built   = 0x14;
         public const byte Character_Look    = 0x15;
+        public const byte Character_Bullet  = 0x16;
 
         // Entities commands (0x1X)
         public const byte Entity_Damage     = 0x21;

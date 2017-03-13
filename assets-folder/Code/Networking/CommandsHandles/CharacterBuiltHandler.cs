@@ -5,18 +5,16 @@ using System;
 
 namespace LlapiExample
 {
-    public class CharacterLookHandler : BaseCommandHandler<CharacterLook>
+    public class CharacterBuiltHandler : BaseCommandHandler<CharacterBuilt>
     {
-        private Firerer firererPrefab;
         private DiContainer container;
 
-        public CharacterLookHandler(IncomingCommandsQueue incomings, Firerer firererPrefab, DiContainer container) : base(incomings)
+        public CharacterBuiltHandler(IncomingCommandsQueue incomings, DiContainer container) : base(incomings)
         {
-            this.firererPrefab = firererPrefab;
             this.container = container;
         }
 
-        protected override void OnCommand(CharacterLook command)
+        protected override void OnCommand(CharacterBuilt command)
         {
             var owner = command.Connection;
             var repository = container.ResolveId<CommanderStatus>(command.Connection);
@@ -26,7 +24,7 @@ namespace LlapiExample
                 return;
             }
 
-            repository.Character.ShootDirection(command.shootDirection);
+            //repository.SpawnCrate(command.position, command.size);
         }
     }
 }

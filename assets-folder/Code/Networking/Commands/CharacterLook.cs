@@ -8,7 +8,7 @@ namespace LlapiExample
     public class CharacterLook : BaseCommand, ICommand
     {
         public Vector3 shootDirection;
-        [Inject(Id = 0)] private CharacterStatus status;
+        [Inject(Id = 0)] private CommanderStatus status;
 
         public CharacterLook() : base(CommandIds.Character_Look)
         {
@@ -18,7 +18,7 @@ namespace LlapiExample
         {
             return new object[]
             {
-                status.Controller.shootDirection
+                status.Character.shootDirection
             };
         }
 
