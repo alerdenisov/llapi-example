@@ -1,6 +1,6 @@
 # LLAPI Example 
 
-This is done as test job to apply position in [Unnyhob company](http://unnyhog.com/)
+This is done as test job to apply position in [Unnyhog company](http://unnyhog.com/)
 
 ## Installation
 1. Clone repository by `git clone https://github.com/alerdenisov/llapi-example.git`
