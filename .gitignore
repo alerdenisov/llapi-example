@@ -4,8 +4,12 @@
 */[Bb]uild/
 */[Bb]uilds/
 */Assets/AssetStoreTools*
-**/Assets*
-**/ProjectSettings*
+llapi-client/Assets
+llapi-server/Assets
+llapi-client/ProjectSettings
+llapi-server/ProjectSettings
+**/Assets/*
+**/ProjectSettings/*
 */SabreCSG*
 **/Zenject*
 **/UniRx*
