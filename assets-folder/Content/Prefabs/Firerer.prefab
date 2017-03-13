@@ -400,6 +400,7 @@ GameObject:
   - component: {fileID: 114052263080058626}
   - component: {fileID: 54184709754726920}
   - component: {fileID: 136265671510912836}
+  - component: {fileID: 114695546668394104}
   m_Layer: 10
   m_Name: Firerer
   m_TagString: Untagged
@@ -1603,8 +1604,20 @@ MonoBehaviour:
   SpineBone: {fileID: 4620084401734952}
   RootBone: {fileID: 4127634148524398}
   WeaponBone: {fileID: 4671642379261420}
+  State: 1
   TargetPosition: {x: 0, y: 0, z: 0}
   MaxSpeed: 4.5
+--- !u!114 &114695546668394104
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1464876572881892}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2b40e1979450ca24ba784c2d7b0b982b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!136 &136265671510912836
 CapsuleCollider:
   m_ObjectHideFlags: 1

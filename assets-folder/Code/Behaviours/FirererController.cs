@@ -11,7 +11,7 @@ namespace LlapiExample
     {
         #region Dependencies
         private NavMeshAgent cachedAgent;
-        protected NavMeshAgent Agent
+        public NavMeshAgent Agent
         {
             get
             {
@@ -21,7 +21,7 @@ namespace LlapiExample
             }
         }
         private Animator cachedAnimator;
-        protected Animator Animator
+        public Animator Animator
         {
             get
             {
@@ -70,7 +70,7 @@ namespace LlapiExample
         public float MaxSpeed;
 
 
-        private Vector3 shootDirection;
+        public Vector3 shootDirection;
 
         private Quaternion spineOrientation;
 
@@ -79,7 +79,7 @@ namespace LlapiExample
             TargetPosition = transform.position;
             Agent.speed = MaxSpeed;
             spineOrientation = SpineBone.transform.localRotation;
-
+            shootDirection = Vector3.forward;
             State = StateFlags.Alive;
         }
 
@@ -87,7 +87,6 @@ namespace LlapiExample
         {
             if (Dead)
             {
-                Debug.Log("Dead state");
                 // Dead state
                 Agent.Stop();
                 Animator.SetFloat("Speed", 0f);
@@ -98,7 +97,6 @@ namespace LlapiExample
             }
             else if (IsDamage)
             {
-                Debug.Log("Damage state");
                 // Taken damage state
                 // Prevent running when taken damage
                 Agent.speed = 0f;
@@ -106,7 +104,6 @@ namespace LlapiExample
             }
             else
             {
-                Debug.Log("Alive state");
                 // allow agent to move with max speed
                 Agent.speed = MaxSpeed;
 

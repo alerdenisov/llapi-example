@@ -24,9 +24,7 @@ namespace LlapiExample
         {
             // Wait for camera and character
             if(!Firerer || !Camera)
-            {
                 return;
-            }
 
             horizontal = Input.GetAxis("Horizontal");
             vertical = Input.GetAxis("Vertical");
@@ -68,6 +66,9 @@ namespace LlapiExample
 
         private void OnDrawGizmos()
         {
+            if (!Firerer || !Camera)
+                return;
+
             var vector = Vector3.right * horizontal + Vector3.forward * vertical;
             vector.Normalize();
 
